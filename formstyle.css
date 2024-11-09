@@ -1,0 +1,24 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 5px;
+}
+
+section {
+    width: 50vw;
+    height: 100vh;
+}
+
+#sectionform {
+    padding: 50px;
+}
+
+#background {
+    background-image: url(https://cdn.create.vista.com/api/media/small/573080148/stock-vector-food-delivery-icon-flat-style-isolated-white-background-delivery-service);
+}
+
+textarea {
+    resize: none;
+}

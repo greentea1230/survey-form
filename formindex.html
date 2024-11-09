@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="formstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <section id="background"></section>
+        <section id="section-form">
+            <form id="survey-form">
+                <h1 id="title">Delivery Habits Survey</h1>
+                <p> What are your delivery habits? </p>
+                <div id="survey-form-info">
+                    <!--Name-->
+                    <div>
+                        <label for="name" id="name-label">Name: </label>
+                        <input type="text" id="name" name="complete-name" placeholder="Last Name, First Name" required>
+                    </div>
+                    <br>
+                    <!--Email-->
+                    <div>
+                        <label for="email" id="email-label">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="username@email.com" required>
+                    </div>
+                    <br>
+                    <!--Age-->
+                    <div>
+                        <label for="number" id="number-label">Age: </label>
+                        <input type="number" id="number" name="age" min="1" max="150" placeholder="1-150" required>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!--Meal-->
+                <div id="survey-form-timing">
+                    <span> Usual Meal Delivered </span> <br>
+                    <input type="radio" id="breakfast" name="meal" value="breakfast">
+                    <label for="breakfast">Breakfast </label> <br>
+                    <input type="radio" id="lunch" name="meal" value="lunch">
+                    <label for="lunch">Lunch </label> <br>
+                    <input type="radio" id="dinner" name="meal" value="dinner">
+                    <label for="dinner">Dinner </label>
+                </div>
+                <br>
+                <br>
+                <!--DeliveryServices-->
+                <div id="survey-form-del">
+                    <span>Delivery Services Used</span> <br>
+                    <input type="checkbox" id="Grab" name="Grab" value="Grab">
+                    <label for="Grab">Grab </label> <br>
+                    <input type="checkbox" id="Foodpanda" name="Foodpanda" value="Foodpanda">
+                    <label for="Foodpanda">Foodpanda </label> <br>
+                    <input type="checkbox" id="Zomato" name="Zomato" value="Zomato">
+                    <label for="Zomato">Zomato </label> <br>
+                    <input type="checkbox" id="Restaurant" name="Restaurant" value="Restaurant">
+                    <label for="Restaurant">Restaurant-specific </label>
+                </div>
+                <br>
+                <br>
+                <!--Cuisine-->
+                <div id="survey-form-cuis">
+                    <span> Usual Cuisines </span> <br>
+                    <input type="checkbox" id="Filipino" name="cuisine" value="Filipino">
+                    <label for="Filipino">Filipino </label> <br>
+                    <input type="checkbox" id="Korean" name="cuisine" value="Korean">
+                    <label for="Korean">Korean </label> <br>
+                    <input type="checkbox" id="Japanese" name="cuisine" value="Japanese">
+                    <label for="Japanese">Japanese </label> <br>
+                    <input type="checkbox" id="Chinese" name="cuisine" value="Chinese">
+                    <label for="Chinese">Chinese </label> <br>
+                    <input type="checkbox" id="Italian" name="cuisine" value="Italian">
+                    <label for="Italian">Italian </label> <br>
+                    <input type="checkbox" id="Spanish" name="cuisine" value="Spanish">
+                    <label for="Spanish">Spanish </label> <br>
+                    <input type="checkbox" id="American" name="cuisine" value="American">
+                    <label for="American">American </label>
+                </div>
+                <br>
+                <br>
+                <div id="survey-form-tip">
+                    <label for="tip"> Do you often add tip? </label>
+                    <select name="tip" id="tip">
+                        <option disabled selected value>-- select an option --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div id="survey-form-comments">
+                    <label for="comments">Notes </label> <br>
+                    <textarea id="comments" name="notes" placeholder="Additional Comments" rows="5" cols="50">
+
+                    </textarea>
+                </div>
+                <br>
+                <br>
+                <button type="submit" id="submit">Submit </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
